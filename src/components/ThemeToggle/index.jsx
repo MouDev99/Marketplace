@@ -17,7 +17,6 @@ function ThemeToggle() {
 
   return (
     <Switch
-      defaultSelected
       size="lg"
       color="success"
       thumbIcon={({ isSelected, className }) =>

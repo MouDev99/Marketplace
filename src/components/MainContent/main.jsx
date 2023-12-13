@@ -1,23 +1,18 @@
+import { Route, Routes } from 'react-router-dom';
+import SideBar from '../SideBar';
+import OfferedGoodsView from '../OfferedGoodsView';
 
 function MainContent() {
 
     return (
-        <div>
+        <div className="flex">
             <SideBar />
+            <Routes>
+                <Route path='/' element={<OfferedGoodsView />} />
+                <Route path={`/category/:name`} element={<OfferedGoodsView />} />
+            </Routes>
         </div>
     )
 };
 
 export default MainContent;
-
-
-
-
-function SideBar() {
-
-    return (
-        <div className="w-[360px] h-[900px]" style={{ border: "1px solid red"}}>
-
-        </div>
-    )
-};

@@ -5,3 +5,23 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+@layer components {
+    .category-link.active {
+        @apply text-[#338EF7];
+        @apply font-semibold;
+        @apply pl-6;
+        @apply transition-all;
+        @apply border-b-3;
+        @apply rounded-xl;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #71717A;
+  border-radius: 25px;
+}
