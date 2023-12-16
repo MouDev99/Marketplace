@@ -1,6 +1,6 @@
 import SearchInput from './SearchInput.jsx';
-import CreateNewListing from '../CreateNewListing';
-import Filters from '../Filters/index.jsx';
+import CreateNewListing from './CreateNewListing';
+import Filters from './Filters';
 
 function SideBar() {
 

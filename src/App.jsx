@@ -9,7 +9,7 @@ function App() {
 
   return (
     <NextUIProvider navigate={navigate}>
-      <div className="app text-foreground bg-background min-h-screen">
+      <div className="text-foreground bg-background min-h-screen">
         <Header />
         <MainContent />
       </div>

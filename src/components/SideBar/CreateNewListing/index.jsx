@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import {
   Modal,
   ModalContent,
@@ -11,12 +11,12 @@ import {
 
 function CreateNewListing() {
   const {isOpen, onOpen, onClose} = useDisclosure();
-  const [backdrop, setBackdrop] = React.useState('opaque')
-  const [theme, setTheme] = React.useState("");
+  const [backdrop, setBackdrop] = useState('opaque')
+  const [theme, setTheme] = useState("");
 
-  React.useEffect(() => {
-    const app = document.querySelector(".app");
-    const classList = Array.from(app.classList);
+  useEffect(() => {
+    const html = document.querySelector("html");
+    const classList = Array.from(html.classList);
     if (classList.includes("dark")) setTheme("dark");
     else setTheme("");
   }, [isOpen]);
