@@ -1,18 +1,20 @@
 import { useState } from "react";
 import {Card, CardBody, Image, Button, Link} from "@nextui-org/react";
 
-function ItemCard({ href }) {
+function ItemCard({ props }) {
+    const { imgHref, view, price, createdAt } = props;
+    const viewIsList = view === "list";
     const [liked, setLiked] = useState(false);
 
     return (
       <Card
         isBlurred
-        className=" bg-background/60 dark:bg-default-100/50 p-1 border-0.5" // flex-grow basis-60
+        className="bg-background/60 dark:bg-default-100/50 p-1 border-0.5"
         shadow="sm"
       >
-        <CardBody>
-            <div className="relative">
-              <Link href={href}>
+        <CardBody className={viewIsList ? "flex flex-row gap-5 justify-center" : ""}>
+            <div className={viewIsList ? "w-[250px]" : "" + "relative flex items-center max-w-xs"}>
+              <Link href={imgHref}>
                 <Image
                   alt="Item img"
                   className="object-cover"
@@ -25,8 +27,15 @@ function ItemCard({ href }) {
               <div className="flex justify-between items-start">
                 <div className="flex flex-col gap-0 mt-2">
                   <h1 className="text-large font-semibold text-foreground/90">Item name</h1>
-                  <p className="text-small text-foreground/80">it won't shrink when the container size reduces, maintaining its size as much as possible.</p>
-                  <h2 className="font-medium mt-2">Price</h2>
+                  <p className="text-small text-foreground/80">it won't shrink when the container size reduces, maintaining its size as much as possible.
+                  </p>
+                  <h2 className={viewIsList ? "absolute bottom-3" : "" + "font-medium mt-2"}>
+                    ${price}
+                    <span className="ml-3 text-small">
+                        Listed at: {createdAt}
+                        <span className="ml-1 text-foreground/80">(value is for testing purposes only)</span>
+                    </span>
+                  </h2>
                 </div>
                 <Button
                   isIconOnly
