@@ -1,11 +1,12 @@
 import { useParams } from "react-router-dom";
 import ItemCard from "./ItemCard";
+import Pagination from "./Pagination";
 
 function ProductsList({ props }) {
   const { view, sortOption } = props;
   const { catgegoryName } = useParams();
 
-  const items = Array.from({ length: 20 }, (_, i) => {
+  const items = Array.from({ length: 10 }, (_, i) => {
     return {
       id: i,
       price: Math.floor(Math.random() * 100) + 1,
@@ -19,8 +20,7 @@ function ProductsList({ props }) {
     "flex flex-col gap-2";
 
   return (
-    <div className={`${layout} min-w-[765px] border-1 border-neutral-400 rounded-xl mx-4 p-4 h-fit`}
-    >
+    <div className={`${layout} min-w-[765px] border-1 border-neutral-400 rounded-xl mx-4 p-4 pb-20 h-fit`}>
       {
         items.map((item) => {
           const {id, price, createdAt} = item;
@@ -33,12 +33,12 @@ function ProductsList({ props }) {
           )
         })
       }
+      <Pagination />
     </div>
   )
 }
 
 export default ProductsList;
-
 
 function compareFunc(sortOption) {
   return (item1, item2) => {

@@ -2,7 +2,7 @@ import { useState } from "react";
 import {Card, CardBody, Image, Button, Link} from "@nextui-org/react";
 
 function ItemCard({ props }) {
-    const { imgHref, view, price, createdAt } = props;
+    const { imgHref, view, price } = props;
     const viewIsList = view === "list";
     const [liked, setLiked] = useState(false);
 
@@ -24,18 +24,24 @@ function ItemCard({ props }) {
               </Link>
             </div>
             <div className="flex flex-col col-span-6 md:col-span-8">
-              <div className="flex justify-between items-start">
+              <div className="flex justify-between items-start relative h-full">
                 <div className="flex flex-col gap-0 mt-2">
                   <h1 className="text-large font-semibold text-foreground/90">Item name</h1>
                   <p className="text-small text-foreground/80">it won't shrink when the container size reduces, maintaining its size as much as possible.
                   </p>
-                  <h2 className={viewIsList ? "absolute bottom-3" : "" + "font-medium mt-2"}>
+                  <h2 className={viewIsList ? "absolute bottom-0" : "" + "font-medium mt-2"}>
                     ${price}
-                    <span className="ml-3 text-small">
-                        Listed at: {createdAt}
-                        <span className="ml-1 text-foreground/80">(value is for testing purposes only)</span>
-                    </span>
                   </h2>
+                  <span className="absolute right-0 bottom-0 text-large">
+                    <Link
+                      href={imgHref}
+                      color="foreground"
+                      className="scale-105"
+                      isExternal
+                      showAnchorIcon
+                    >
+                    </Link>
+                  </span>
                 </div>
                 <Button
                   isIconOnly
