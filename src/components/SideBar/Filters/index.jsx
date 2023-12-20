@@ -1,6 +1,6 @@
 import DeliveryOptions from "./DeliveryOptions";
 import Price from "./Price";
-import Categories from "./Categories";
+import Categories from "../../SharedComponents/Categories"
 
 function Filters() {
 

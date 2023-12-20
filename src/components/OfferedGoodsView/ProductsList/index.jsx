@@ -1,10 +1,8 @@
-import { useParams } from "react-router-dom";
-import ItemCard from "./ItemCard";
+import ItemCard from "../../SharedComponents/ItemCard";
 import Pagination from "./Pagination";
 
 function ProductsList({ props }) {
   const { view, sortOption } = props;
-  const { catgegoryName } = useParams();
 
   const items = Array.from({ length: 10 }, (_, i) => {
     return {
@@ -24,7 +22,7 @@ function ProductsList({ props }) {
       {
         items.map((item) => {
           const {id, price, createdAt} = item;
-          const imgHref=`/category/${catgegoryName}/${id}`;
+          const imgHref=`/items/${id}`;
           return (
             <ItemCard
               key={id}

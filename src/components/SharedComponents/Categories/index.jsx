@@ -1,9 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { Link } from "@nextui-org/react";
-import { IconDown, IconUp } from "./IconUp-IconDown";
+import { IconDown, IconUp } from "../IconUp-IconDown";
 
 function Categories() {
     const [showCategoriesList, setShowCategoriesList] = useState(true);
+    const { categoryName } = useParams();
+
+    useEffect(() => {
+      const prvActiveLink = document.querySelector(".category-link.active");
+      if (prvActiveLink) {
+        prvActiveLink.classList.remove("active");
+      }
+      const links = document.querySelectorAll(".category-link");
+      links.forEach(link => {
+        if (link.innerText.toLowerCase() === categoryName) {
+          link.classList.add("active")
+        }
+      })
+    }, [categoryName]);
 
     const toggleCategoriesList = () => setShowCategoriesList(!showCategoriesList);
 
@@ -21,14 +36,6 @@ function Categories() {
       { name: 'Toys & Games', icon: (<IconGameController />)},
     ];
 
-    const handlePress = (e) => {
-      const prvActiveLink = document.querySelector(".category-link.active");
-      if (prvActiveLink) {
-        prvActiveLink.classList.remove("active");
-      }
-      e.target.classList.add("active")
-    }
-
     const listUI = (
       <div className="flex flex-col gap-2 w-full py-2">
         {
@@ -42,7 +49,6 @@ function Categories() {
                 color="foreground"
                 className="pl-3 py-2 category-link relative font-semibold"
                 isBlock
-                onPress={handlePress}
               >
                 {name} {(icon)}
               </Link>
@@ -53,7 +59,7 @@ function Categories() {
     )
 
     return (
-      <div className="pb-1.5 ml-5 border-b-1 border-gray-300">
+      <div className="pb-1.5 ml-5 border-b-1 border-gray-300 min-w-[350px]">
         <span className="flex cursor-pointer relative font-bold"
           onClick={toggleCategoriesList}
         >

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Slider } from "@nextui-org/react";
-import { IconDown, IconUp } from "./IconUp-IconDown";
+import { IconDown, IconUp } from "../../SharedComponents/IconUp-IconDown";
 
 function Price() {
     const [showSlider, setShowSlider] = useState(true);

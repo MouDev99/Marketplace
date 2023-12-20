@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Radio, RadioGroup} from '@nextui-org/react'
-import { IconDown, IconUp } from './IconUp-IconDown';
+import { IconDown, IconUp } from "../../SharedComponents/IconUp-IconDown";
 
 function DeliveryOptions() {
     const [showOptions, setShowOptions] = useState(true);
