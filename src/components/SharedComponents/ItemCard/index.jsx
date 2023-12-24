@@ -2,7 +2,16 @@ import { useState } from "react";
 import {Card, CardBody, Image, Button, Link} from "@nextui-org/react";
 
 function ItemCard({ props }) {
-    const { imgHref, view, price } = props;
+    const { view } = props;
+    const {
+      id,
+      price,
+      imgs_url,
+      name,
+      description,
+      listedAt
+    } = props.item;
+    const dateListed = new Date(listedAt).toDateString();
     const viewIsList = view === "list";
     const [liked, setLiked] = useState(false);
 
@@ -12,29 +21,32 @@ function ItemCard({ props }) {
         className="bg-background/60 dark:bg-default-100/50 p-1 border-0.5"
         shadow="sm"
       >
-        <CardBody className={viewIsList ? "flex flex-row gap-5 justify-center" : ""}>
-            <div className={viewIsList ? "w-[250px]" : "" + "relative flex items-center max-w-xs"}>
-              <Link href={imgHref}>
+        <CardBody className={viewIsList ? "flex flex-row gap-5 justify-center" : " relative"}>
+            <div className={(viewIsList ? "w-[250px] " : "") + "flex items-center max-w-xs"}>
+              <Link href={`/items/${id}`}>
                 <Image
                   alt="Item img"
-                  className="object-cover"
+                  className="object-cover w-[400px] h-[300px]"
                   shadow="md"
-                  src="https://i.pravatar.cc/"
+                  src={imgs_url[0]}
                 />
               </Link>
             </div>
             <div className="flex flex-col col-span-6 md:col-span-8">
-              <div className="flex justify-between items-start relative h-full">
+              <div
+                 className={(viewIsList ? "relative " : "") + "flex justify-between items-start h-full"}
+              >
                 <div className="flex flex-col gap-0 mt-2">
-                  <h1 className="text-large font-semibold text-foreground/90">Item name</h1>
-                  <p className="text-small text-foreground/80">it won't shrink when the container size reduces, maintaining its size as much as possible.
+                  <h1 className="text-large font-semibold text-foreground/90">{name.slice(0, 20)}</h1>
+                  <p className={(viewIsList ? "w-[500px] " : "") + "text-small text-foreground/80 pb-4"}>
+                    {description.slice(0, 50)}
                   </p>
-                  <h2 className={viewIsList ? "absolute bottom-0" : "" + "font-medium mt-2"}>
-                    ${price}
+                  <h2 className="absolute bottom-0.5 font-medium mt-2">
+                    ${price} <span className="text-xs text-foreground/80">{dateListed}</span>
                   </h2>
-                  <span className="absolute right-0 bottom-0 text-large">
+                  <span className={(viewIsList ? "right-0 " : "right-2.5 ") + "absolute bottom-0 text-large"}>
                     <Link
-                      href={imgHref}
+                      href={`/items/${id}`}
                       color="foreground"
                       className="scale-105"
                       isExternal

@@ -1,17 +1,16 @@
+import { useState } from "react";
 import ItemCard from "../../SharedComponents/ItemCard";
 import Pagination from "./Pagination";
 
 function ProductsList({ props }) {
-  const { view, sortOption } = props;
+  const { items, view, sortOption } = props;
+  const [pageNumber, setPageNumber] = useState(1);
 
-  const items = Array.from({ length: 10 }, (_, i) => {
-    return {
-      id: i,
-      price: Math.floor(Math.random() * 100) + 1,
-      createdAt: Math.floor(Math.random() * 100) + 1 // for testing purposes
-    }
-  });
-  items.sort(compareFunc(sortOption));
+  // select the items to show based on pageNumber / (show 15 items per page)
+  const currItems = items.slice((pageNumber -1)*15, pageNumber*15);
+
+  // sort current items base on sort otion
+  currItems.sort(compareFunc(sortOption));
 
   const layout = view === "grid" ?
     "grid max-[1300px]:grid-cols-3 max-[1600px]:grid-cols-4 min-[1600px]:grid-cols-5 gap-2" :
@@ -20,18 +19,19 @@ function ProductsList({ props }) {
   return (
     <div className={`${layout} min-w-[765px] border-1 border-neutral-400 rounded-xl mx-4 p-4 pb-20 h-fit`}>
       {
-        items.map((item) => {
-          const {id, price, createdAt} = item;
-          const imgHref=`/items/${id}`;
+        currItems.map((item) => {
           return (
             <ItemCard
-              key={id}
-              props={{imgHref, view, price, createdAt}}
+              key={item.id}
+              props={{item, view}}
             />
           )
         })
       }
-      <Pagination />
+      <Pagination
+        setPageNumber={setPageNumber}
+        itemsNum={items.length}
+      />
     </div>
   )
 }
@@ -49,8 +49,10 @@ function compareFunc(sortOption) {
       if (item1.price < item2.price) return 1;
 
     } else if (sortOption === "newest") {
-      if (item1.createdAt > item2.createdAt) return -1
-      if (item1.createdAt < item2.createdAt) return 1;
+      const item1Date = new Date(item1.listedAt);
+      const item2Date = new Date(item2.listedAt);
+      if (item1Date > item2Date) return -1
+      if (item1Date < item2Date) return 1;
 
     }
     return 0;

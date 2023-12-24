@@ -29,8 +29,8 @@ function Categories() {
       { name: 'Electronics', icon: (<IconMonitorCellphone />)},
       { name: 'Furniture', icon: (<IconSofaSingle />)},
       { name: 'Home Appliances', icon: (<IconHomeCog />)},
-      { name: 'Office supplies', icon: (<IconPrinterFill />)},
-      { name: 'Pet supplies', icon: (<IconDog />)},
+      { name: 'Office Supplies', icon: (<IconPrinterFill />)},
+      { name: 'Pet Supplies', icon: (<IconDog />)},
       { name: 'Shoes', icon: (<IconShoeFormal />)},
       { name: 'Sports & Entertainment', icon: (<IconAmericanFootball />)},
       { name: 'Toys & Games', icon: (<IconGameController />)},
@@ -44,7 +44,7 @@ function Categories() {
             return (
               <Link
                 key={i}
-                href={`/category/${name.toLowerCase()}`}
+                href={`/category/${name}`}
                 size="md"
                 color="foreground"
                 className="pl-3 py-2 category-link relative font-semibold"
