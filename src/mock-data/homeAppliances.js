@@ -4,7 +4,7 @@ const homeAppliances = [
     name: 'Samsung Family Hub Refrigerator & AddWash Appliances - The Inspired Room',
     description: 'Dream Kitchen Log in to see more',
     price: 238,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/75/03/e0/7503e0d94db7807264bbf264d135ffaa.jpg',
       'https://i.pinimg.com/236x/95/fb/86/95fb86aad8f13864a0d5020df814b3c3.jpg',
       'https://i.pinimg.com/236x/75/03/e0/7503e0d94db7807264bbf264d135ffaa.jpg',
@@ -24,7 +24,7 @@ const homeAppliances = [
     description:
       '4 Smart Home Appliances To Upgrade The Kitchen, Laundry Room And More Genius Portable Mini Washing Machine 😍 #amazonfinds Portable Mini Washing Machine',
     price: 205,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/79/f4/e3/79f4e3d64667a1e597879052b3a3f5b5.jpg',
       'https://i.pinimg.com/236x/3d/b7/79/3db779948a2086ac0721007c31171461.jpg',
       'https://i.pinimg.com/236x/84/ec/82/84ec8230d49b626b45a1c138bf6ac2c7.jpg',
@@ -44,7 +44,7 @@ const homeAppliances = [
     description:
       'Breville ® the Combi Wave ™ 3-in-1 Microwave, Air Fryer and Convection Oven 0.7-Cubic Foot Black Child-Safe Lockout Feature 10 Power Levels 6 Quick-Set Menu Buttons LED Display Microwave Oven Breville ® the Combi Wave ™ 3-in-1 Microwave, Air Fryer and Convection Oven',
     price: 179,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/e2/9f/56/e29f56f7be91015935537e52b745cf0a.jpg',
       'https://i.pinimg.com/236x/ab/d0/c3/abd0c34f8546e46913c51173e891e75a.jpg',
       'https://i.pinimg.com/236x/40/22/a5/4022a56d2d191470e572548087c6d2df.jpg',
@@ -64,7 +64,7 @@ const homeAppliances = [
     description:
       'Learn Blender with a poster infographic Learn Blender with a poster infographic Learn Blender with a poster infographic',
     price: 75,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/4f/61/06/4f6106c2ab041c1717d6a227ae530f6f.jpg',
       'https://i.pinimg.com/236x/fe/af/eb/feafeb28945e499dfa5d71e73aa9ba80.jpg',
       'https://i.pinimg.com/236x/ec/a8/34/eca834579918b796ace3b5dd938da4b5.jpg',
@@ -84,7 +84,7 @@ const homeAppliances = [
     description:
       'Install a DIY Mini-Split Air Conditioner / Heat Pump Daikin Air conditioner repair worker young happy Vector Image | ครีม นวดผม, เครื่องปรับอากาศ, ความร้อน',
     price: 37,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/67/eb/b2/67ebb2dc599b2be17db69143e3e143e9.jpg',
       'https://i.pinimg.com/236x/8f/d0/9e/8fd09ecb77c87ac74465dfd7e791be91.jpg',
       'https://i.pinimg.com/236x/dc/ab/25/dcab25c791d291c58e1cc01808850fd7.jpg',
@@ -104,7 +104,7 @@ const homeAppliances = [
     description:
       'BIG DISHWASHER SWEEPS KitchenAid® PrintShield Stainless 24 Dishwasher with Towel Bar Handle - KDTM604KPS - 168',
     price: 188,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/49/30/8d/49308dc726878474574c77f3ddaa2a1c.jpg',
       'https://i.pinimg.com/236x/1f/bc/8b/1fbc8b6c3147a0807d8f09d245616d63.jpg',
       'https://i.pinimg.com/236x/32/db/6b/32db6b98aee665d558495603aded0daa.jpg',
@@ -124,7 +124,7 @@ const homeAppliances = [
     description:
       'Toastmaster 2 Slice Cool Touch Toaster in Black Philips Toaster – 2 Toastschlitze, 8 Stufen, Brötchenaufsatz, Auftaufunktion, Liftfunktion, Abschaltautomatik, weiß (HD2581/00)',
     price: 17,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/3a/b8/18/3ab818fdc0776086f0d5bd4932e0647e.jpg',
       'https://i.pinimg.com/236x/8e/d6/ad/8ed6adfcaef277dd1d5a5affbf54067f.jpg',
       'https://i.pinimg.com/236x/62/2a/f6/622af62a33eb7d6f7e60e61b749c9981.jpg',
@@ -144,7 +144,7 @@ const homeAppliances = [
     description:
       'Mixpresso Single Cup Coffee Maker | Personal, Single Serve Coffee Brewer Machine, Compatible with Single-Cups | Quick Brew Technology, Programmable Features, One Touch Function (Black) Mixpresso Single Cup Coffee Maker | Personal, Single Serve Coffee Brewer Machine, Compatible with Single-Cups | Quick Brew Technology, Programmable Features, One Touch Function (Black) Beautiful 14 Cup Programmable Touchscreen Coffee Maker, Black Sesame by Drew Barrymore - Walmart.com',
     price: 264,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/3d/ed/cc/3dedcc7bb90332a9d90ba7454bfc4e8a.jpg',
       'https://i.pinimg.com/236x/55/af/62/55af623283e5887a5fffd4b5c3b9fee6.jpg',
       'https://i.pinimg.com/236x/55/af/62/55af623283e5887a5fffd4b5c3b9fee6.jpg',
@@ -164,7 +164,7 @@ const homeAppliances = [
     description:
       'The Best Vacuum Cleaners of 2023, Reviewed by HGTV Editors Miele Vacuum Cleaners - The Perfect Tool For All Your Daily Chores',
     price: 396,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/f3/10/a1/f310a17aba77110f059a9fc7c7e4019b.jpg',
       'https://i.pinimg.com/236x/c8/c4/33/c8c433247518603236856f3ac6621789.jpg',
       'https://i.pinimg.com/236x/e1/66/13/e1661393c6235e75d21769f44e51dd50.jpg',
@@ -184,7 +184,7 @@ const homeAppliances = [
     description:
       "'O' Electric Kettle for HIMART Brentwood Appliances Kt-1800 2l Stainless Steel Electric Cordless Tea Kettle, Silver Next Chrome/Glass Kettle - Clear",
     price: 229,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/91/3b/0d/913b0dfb98663b989b0e8e56a4d67f1a.jpg',
       'https://i.pinimg.com/236x/4f/6e/fd/4f6efdba732bea6614acb7deef21a563.jpg',
       'https://i.pinimg.com/236x/bd/27/af/bd27afee790d56b09115200aab6da4dc.jpg',
@@ -204,7 +204,7 @@ const homeAppliances = [
     description:
       '12 Magical Ways To Use A Food Processor 40 Food Processor Recipes for People Who Are Sick of Chopping Beet Hummus',
     price: 296,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/07/2d/a8/072da840c98beae179c59395a9cd2db3.jpg',
       'https://i.pinimg.com/236x/ae/db/e6/aedbe612937c5f1f915a4494895f23e0.jpg',
       'https://i.pinimg.com/236x/96/cf/92/96cf92baf2e424221417c111056e2dc9.jpg',
@@ -224,7 +224,7 @@ const homeAppliances = [
     description:
       'Drizom Citrus Lemon Orange Juicer Manual Hand Squeezer, Fruit Juicer Lime Press with Built-in Measuring Cup and Grater and Egg separator, Non-Slip Silicone Handle, 20OZ How To Juice Ginger With and Without Juicer',
     price: 302,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/0a/ff/64/0aff64413e5e7ab17b01942599fa0155.jpg',
       'https://i.pinimg.com/236x/f0/32/77/f03277cd4ff04dd740d57cc34623cc8c.jpg',
       'https://i.pinimg.com/236x/aa/93/66/aa93664445d0e0d40eaa77160282f9d7.jpg',
@@ -244,7 +244,7 @@ const homeAppliances = [
     description:
       'The Best Rice Cookers of 2020: Perfect Rice Every Time | Foodal 21 Clever Gadgets That Will Totally Change the Way You Cook 5 Things You Can Make in a Rice Cooker (Other than Rice)',
     price: 495,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/bf/47/b0/bf47b08d4bddf92560ea07b5af6951e0.jpg',
       'https://i.pinimg.com/236x/9b/95/de/9b95de46d8f5708ad75b9e093552bb62.jpg',
       'https://i.pinimg.com/236x/3c/60/d7/3c60d7a1b73b2af7b2890aa63c452178.jpg',
@@ -264,7 +264,7 @@ const homeAppliances = [
     description:
       'The Best Gluten Free Bread Machine Bread Bread Machine - Salad in a Jar',
     price: 458,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/be/1d/40/be1d40a2dce51b8f86a8e3507d36dc5b.jpg',
       'https://i.pinimg.com/236x/10/9f/5b/109f5b3b40ffba59baa236617df7cfce.jpg',
       'https://i.pinimg.com/236x/49/0a/8f/490a8f2f2fe71203a60a19e9340c7868.jpg',
@@ -284,7 +284,7 @@ const homeAppliances = [
     description:
       'This is my fave dish ever and I finally found a version for the slow cooker Slow Cooker Barbecue Ribs Slow Cooker Beef Stew',
     price: 148,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/bc/5f/64/bc5f647b30ff23317ec133e1a3abee28.jpg',
       'https://i.pinimg.com/236x/54/11/0e/54110ef951a0f5a632b11519951a926e.jpg',
       'https://i.pinimg.com/236x/b7/62/2c/b7622c4cf028643c789d5ed20068af62.jpg',
@@ -304,7 +304,7 @@ const homeAppliances = [
     description:
       'What is the best air purifier for asthma and allergies? (2023) - The Flooring Girl Air purifier LEVOIT VortexAir True HEPA Air Purifier, 220 Sq Ft, White',
     price: 139,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/7a/80/4a/7a804aa43eec286ef77daa4a082c5d50.jpg',
       'https://i.pinimg.com/236x/cd/c7/65/cdc765689a437cc52ef2833477546f8b.jpg',
       'https://i.pinimg.com/236x/7a/80/4a/7a804aa43eec286ef77daa4a082c5d50.jpg',
@@ -323,7 +323,7 @@ const homeAppliances = [
     name: 'Best Vegan Sources of Iron + 10 Easy Vegan Recipes - Simply Quinoa',
     description: 'The 5 Best Steam Irons, According to Our Tests Best Vegan Sources of Iron + 10 Easy Vegan Recipes - Simply Quinoa Dedicated to Mom and Dad~Garage Sale Treasures',
     price: 75,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/9d/c3/68/9dc368aa0bfc2780d0a5de987b41d73f.jpg',
       'https://i.pinimg.com/236x/86/94/62/8694627bb43bcd802acb7f262bf3deb2.jpg',
       'https://i.pinimg.com/236x/9d/c3/68/9dc368aa0bfc2780d0a5de987b41d73f.jpg',
@@ -342,7 +342,7 @@ const homeAppliances = [
     name: 'Household Electrical Appliances Vector Hd PNG Images, Electric Appliance Home Appliance Decoration Lovely, Supplies, Electric Fan, Cartoon PNG Image For Free Download',
     description: 'Dreo Nomad One Tower Fans for Home, 24ft/s Velocity Quiet Cooling Fan 10 Table Fans That Are *Actually* Stylish 10 Table Fans That Are *Actually* Stylish',
     price: 165,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/0b/39/8d/0b398dba98899eb6106737520cfceeee.jpg',
       'https://i.pinimg.com/236x/ef/5b/d4/ef5bd42d4ae0860467fe91ce76677871.jpg',
       'https://i.pinimg.com/236x/20/e4/0f/20e40f34ca509bcc7088216352e0cfdd.jpg',
@@ -361,7 +361,7 @@ const homeAppliances = [
     name: 'List of Stores to Buy Now Pay Later Air Conditioner',
     description: 'solarflex Solar Water Heater List of Stores to Buy Now Pay Later Air Conditioner List of Stores to Buy Now Pay Later Air Conditioner',
     price: 437,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/b8/66/da/b866daad48022b22f7e360956c7c6d80.jpg',
       'https://i.pinimg.com/236x/5c/0b/48/5c0b486d738847c1f234740640bf25bf.jpg',
       'https://i.pinimg.com/236x/b8/66/da/b866daad48022b22f7e360956c7c6d80.jpg',
@@ -380,7 +380,7 @@ const homeAppliances = [
     name: 'Compact Electric Grills | Seafoam Green Lumin Compact Electric Grill',
     description: 'Compact Electric Grills | Seafoam Green Lumin Compact Electric Grill Indoor Bbq Hamilton Beach Panini Press, Sandwich Maker & Electric Indoor Grill, Upright Storage, Nonstick Easy Clean Grids, Stainless Steel (25410)',
     price: 308,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/0d/e9/ee/0de9eef12265d07582558e257e9b1dde.jpg',
       'https://i.pinimg.com/236x/0d/e9/ee/0de9eef12265d07582558e257e9b1dde.jpg',
       'https://i.pinimg.com/236x/44/20/f9/4420f9bd153f1df85bb542b3220fa19b.jpg',
@@ -399,7 +399,7 @@ const homeAppliances = [
     name: 'Log in to see more',
     description: 'Mixer Grinders: Buy Mixer Grinders Online at Best Prices in India-Amazon.in Search Crompton Ameo 750 Watt Heavy Duty Mixer Grinder 3 Stainless Steel Jars',
     price: 382,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/dd/ed/6f/dded6ff16f2e2f765f5e27788f4edbf3.jpg',
       'https://i.pinimg.com/236x/dd/ed/6f/dded6ff16f2e2f765f5e27788f4edbf3.jpg',
       'https://i.pinimg.com/236x/7c/a0/0b/7ca00bb74f333cc61aaaaf443eeca523.jpg',
@@ -418,7 +418,7 @@ const homeAppliances = [
     name: 'Schenley Steam Mop Cleaner with Detachable Handheld Steamer for Cleaning Hardwood/Laminate Floor, Tiles and Grout, with 7-in-1 Multi-purpose Accessories and Washable Microfiber Pads',
     description: '5 in 1 H2O Mop X5 Handheld Steam Cleaner & Steam Mop McCulloch® MC1230 Handheld Steam Cleaner, Color: Black Schenley Steam Mop Cleaner with Detachable Handheld Steamer for Cleaning Hardwood/Laminate Floor, Tiles and Grout, with 7-in-1 Multi-purpose Accessories and Washable Microfiber Pads',
     price: 44,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/22/40/b8/2240b8b8d79220c88d1b0a4c7ed7efe5.jpg',
       'https://i.pinimg.com/236x/34/e0/73/34e073b9a738b0c2a5353d6d1e362a68.jpg',
       'https://i.pinimg.com/236x/f5/a9/31/f5a931c8346d32f8dac32fad3361472b.jpg',

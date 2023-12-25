@@ -5,7 +5,7 @@ const furniture = [
     description:
       'Baixo Sofa by Guilherme Wentz Contemporary Living Room Design',
     price: 4,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/40/78/20/4078202662d91e6e5496d3f650572a69.jpg',
       'https://i.pinimg.com/236x/85/94/c5/8594c50661226eb10bb58a63e38e8bdc.jpg',
       'https://i.pinimg.com/236x/ae/2b/35/ae2b35e9111464650e979c128be68419.jpg',
@@ -22,7 +22,7 @@ const furniture = [
     description:
       '20 Luxe Dining Table Ideas To Take Inspiration From - Home Decor jolie modèle de table ronde',
     price: 409,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/da/44/29/da44296e31fca8cc51b52d7f11af02b6.jpg',
       'https://i.pinimg.com/236x/99/3f/f8/993ff89ab17e4ce089337dd2822887f4.jpg',
       'https://i.pinimg.com/236x/29/8d/b7/298db7d6e410fedd108254794461c510.jpg',
@@ -39,7 +39,7 @@ const furniture = [
     description:
       'Aliyah Luxurious Chesterfield Wingback Bed Frame - (D#VKZBF6F) Haven Slipcover, Full, Performance Velvet, Dove Gray 21 DIY Bed Frame Projects – Sleep in Style and Comfort',
     price: 37,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/8a/c3/69/8ac3696c877500d85aa7c3cadcbfd052.jpg',
       'https://i.pinimg.com/236x/62/6b/60/626b606b6cc804257483b99ec30e595e.jpg',
       'https://i.pinimg.com/236x/bf/00/8a/bf008a55a4aa1e083e9b79e9748078d3.jpg',
@@ -56,7 +56,7 @@ const furniture = [
     description:
       '『玄関のデザインアイディア。』 Варианты наполнения шкафа в прихожую: полезные советы и 76 фото How to DIY rattan doors for IKEA wardrobe - IKEA Hackers',
     price: 354,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/10/3e/a4/103ea4164caff3a37cdf36d475180c64.jpg',
       'https://i.pinimg.com/236x/ed/8c/f6/ed8cf67129318f6c4c17b74eb3293d1c.jpg',
       'https://i.pinimg.com/236x/de/2b/1b/de2b1bdf9535f70ab2453e4a2ef0cdd7.jpg',
@@ -72,7 +72,7 @@ const furniture = [
     name: 'Sonali Oval Coffee Table',
     description: 'Sonali Oval Coffee Table Coffee Table',
     price: 170,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/92/6e/06/926e06626458b682f3285bfc4e17d72e.jpg',
       'https://i.pinimg.com/236x/92/6e/06/926e06626458b682f3285bfc4e17d72e.jpg',
       'https://i.pinimg.com/236x/ac/db/ff/acdbff1fabf893121202b049e383baa4.jpg',
@@ -89,7 +89,7 @@ const furniture = [
     description:
       'Going to the Library - Multi Krossing Bookshelf & designer furniture | Architonic',
     price: 341,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/91/af/8c/91af8c8a9a178dce3b3c4842e073dd91.jpg',
       'https://i.pinimg.com/236x/09/c8/36/09c8361a70644ecbe382a4b5b69a5c7c.jpg',
       'https://i.pinimg.com/236x/28/a5/38/28a53818427467bceef016911ed494b4.jpg',
@@ -106,7 +106,7 @@ const furniture = [
     description:
       'Newquay 4 - Drawer Dresser Ellington 6-Drawer Dresser (60") 16 Other Stores to Consider if You\'re a Fan of Urban Outfitters Home',
     price: 487,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/fa/32/79/fa32791da4ebb5ea3bcad7d8c12bbd17.jpg',
       'https://i.pinimg.com/236x/00/88/58/00885884e2e469a4130039341dccbdc4.jpg',
       'https://i.pinimg.com/236x/fc/3f/58/fc3f58edb392090eec163d05d897ef93.jpg',
@@ -123,7 +123,7 @@ const furniture = [
     description:
       'Modern Furniture, Home Decor, Lighting & More Log in to see more Unique Gifts, Unique Living - ApolloBox',
     price: 129,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/ac/93/b2/ac93b24c8c034ca5278992367d47e2da.jpg',
       'https://i.pinimg.com/236x/b0/93/48/b0934886d5f03f94a2f961d1f26a8d00.jpg',
       'https://i.pinimg.com/236x/a8/51/57/a8515727ec6cded195959decfa3dada1.jpg',
@@ -140,7 +140,7 @@ const furniture = [
     description:
       'Commix Down Filled Overstuffed Performance Velvet 5-Piece Sectional Sofa in Gray by Modway Dalton 2 Piece Chaise Sectional | Sofa With Chaise Marco 2pc Sectional Sofa :: Leg Finish: Pecan / Configuration: RAF - Chaise on the Right',
     price: 271,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/a4/c5/96/a4c59690a7a28025f394ecb626390859.jpg',
       'https://i.pinimg.com/236x/c0/2c/c4/c02cc44a54fb362121cdea598b8d160d.jpg',
       'https://i.pinimg.com/236x/39/e9/b2/39e9b2252e4cc645c8789ccbf6b2eb02.jpg',
@@ -157,7 +157,7 @@ const furniture = [
     description:
       'Cadeau Push Back Swivel Recliner Chair by iNSPIRE Q Modern Looking for Total Comfort and Support? | Sedlak Interiors Carries a Remarkable Array of Recliners High Back Office Chair',
     price: 189,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/0c/e1/5a/0ce15a185627d15b2c0a6dd70fe2d12e.jpg',
       'https://i.pinimg.com/236x/91/64/c4/9164c426207ece188171542212e325b8.jpg',
       'https://i.pinimg.com/236x/ff/bd/5e/ffbd5ec7226be236381e23212954814d.jpg',
@@ -174,7 +174,7 @@ const furniture = [
     description:
       'The 14 Best Books on the Ottoman Empire Enfield Ottoman - Natural finish Janissary',
     price: 357,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/96/d4/4b/96d44bf43e8f42e772556ced422c370c.jpg',
       'https://i.pinimg.com/236x/06/00/87/060087e8523af6f585381893bb53309d.jpg',
       'https://i.pinimg.com/236x/2d/05/a9/2d05a9f7c550ea1c47cd3d5f6be840b2.jpg',
@@ -190,7 +190,7 @@ const furniture = [
     name: 'YQ WHJB Japanese Floor Futon Mattress,Foldable Thicken Matt mat,Soft Student Dormitory Sleeping Mattress pad Shikibuton-gray Queen',
     description: '',
     price: 411,
-    imgs_url: [
+    imgsUrl: [
       'https://i.pinimg.com/236x/36/aa/8b/36aa8b05b3630ec7c22d2122ecb7b200.jpg',
       'https://i.pinimg.com/236x/99/26/8f/99268f19fd1dbdbb4d9a254debeed2d6.jpg',
       'https://i.pinimg.com/236x/85/47/9e/85479efdd16ad75efdfba11ae4efc42f.jpg',

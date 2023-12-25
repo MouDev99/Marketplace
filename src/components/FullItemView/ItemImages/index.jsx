@@ -1,18 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {Image} from "@nextui-org/react";
 
-function ItemImages() {
-  const imgs = [
-    // { url: "https://i.pravatar.cc/" },
-    // { url: "https://i.pravatar.cc/" },
-    // { url: "https://i.pravatar.cc/" },
-    // { url: "https://i.pravatar.cc/" },
-    { url: "https://i.pinimg.com/736x/6b/61/6f/6b616fd847a9648d6c9d14fa499fb831.jpg"},
-    { url: "https://i.pinimg.com/736x/2e/a2/54/2ea254bc0b7389813dee31dd38ba5e9e.jpg"},
-    { url: "https://i.pinimg.com/736x/57/2b/c5/572bc53ce23f9db823af275d50046c21.jpg"},
-    { url: "https://i.pinimg.com/736x/a6/5e/87/a65e87dfc5745891c166a687f0b7e989.jpg"}
-  ];
-  const [mainImgUrl, setMainImgUrl] = useState(imgs[0].url);
+function ItemImages({ imgsUrl }) {
+  const [mainImgUrl, setMainImgUrl] = useState('');
+  const uniqueImgsUrl = Array.from(new Set(imgsUrl));
+
+  useEffect(() => {
+    setMainImgUrl(uniqueImgsUrl[0]);
+  }, [imgsUrl]);
 
   return (
     <div className="flex gap-2 justify-end">
@@ -23,7 +18,7 @@ function ItemImages() {
       />
       <div className="flex flex-col gap-2">
         {
-          imgs.map(({ url }, i) => {
+          uniqueImgsUrl.map((url, i) => {
             return (
               <Image
                 key={i}

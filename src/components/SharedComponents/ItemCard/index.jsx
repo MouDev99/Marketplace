@@ -6,9 +6,10 @@ function ItemCard({ props }) {
     const {
       id,
       price,
-      imgs_url,
+      imgsUrl,
       name,
       description,
+      category,
       listedAt
     } = props.item;
     const dateListed = new Date(listedAt).toDateString();
@@ -23,12 +24,12 @@ function ItemCard({ props }) {
       >
         <CardBody className={viewIsList ? "flex flex-row gap-5 justify-center" : " relative"}>
             <div className={(viewIsList ? "w-[250px] " : "") + "flex items-center max-w-xs"}>
-              <Link href={`/items/${id}`}>
+              <Link href={`/${category}/item/${id}`}>
                 <Image
                   alt="Item img"
                   className="object-cover w-[400px] h-[300px]"
                   shadow="md"
-                  src={imgs_url[0]}
+                  src={imgsUrl[0]}
                 />
               </Link>
             </div>

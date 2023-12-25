@@ -25,7 +25,7 @@ function MainContent() {
             </>
           }
         />
-        <Route path="/items/:itemId" element={<FullItemView />} />
+        <Route path="/:categoryName/item/:itemId" element={<FullItemView />} />
       </Routes>
     </div>
   );
