@@ -6,8 +6,6 @@ const accessories = [
       "price": 343,
       "imgsUrl": [
           "https://i.pinimg.com/236x/51/e5/5c/51e55c49986740055c113087f03b24b7.jpg",
-          "https://i.pinimg.com/236x/b6/fa/b3/b6fab319c1c11ec82d1450ef17c30da2.jpg",
-          "https://i.pinimg.com/236x/e6/4e/38/e64e38d801691080f807aa23874c38f5.jpg",
           "https://i.pinimg.com/236x/da/39/dc/da39dc70c3cad90f658d588390815fd5.jpg"
       ],
       "listedAt": "2024-02-05",
@@ -24,9 +22,7 @@ const accessories = [
       "description": " Ivory Fuzzy Oblong Scarf Trending Winter Outfits",
       "price": 208,
       "imgsUrl": [
-          "https://i.pinimg.com/236x/d9/f5/2c/d9f52c52f870cb4f69d8cfb442d26425.jpg",
           "https://i.pinimg.com/236x/12/8e/41/128e41d454a817d1824941ca7082f0d4.jpg",
-          "https://i.pinimg.com/236x/04/e3/8d/04e38d1e060657493dcbaa6f8bd1a66e.jpg",
           "https://i.pinimg.com/236x/07/89/cb/0789cbc9c94308d3ff2d0046d1bc7a3b.jpg"
       ],
       "listedAt": "2023-12-18",
@@ -83,7 +79,6 @@ const accessories = [
       "imgsUrl": [
           "https://i.pinimg.com/236x/61/73/dd/6173dd6c7bc80b4f2d7822f4e8230258.jpg",
           "https://i.pinimg.com/236x/4f/0b/55/4f0b556eb5d35ce5910d442625f4ff6b.jpg",
-          "https://i.pinimg.com/236x/b6/d7/1c/b6d71c98b5f8da918599380038ba0ab7.jpg",
           "https://i.pinimg.com/236x/95/8a/c8/958ac8b66b7f2ca4c34579a47c9387e2.jpg"
       ],
       "listedAt": "2023-12-12",
@@ -119,9 +114,7 @@ const accessories = [
       "description": "The Hunt: Stylish Women's Belts for Work - Corporette.com The most wanted luxury belt brands of the moment I.N.C. International Concepts Double Circle Belt, Created for Macy's - Macy's",
       "price": 498,
       "imgsUrl": [
-          "https://i.pinimg.com/236x/1a/3b/18/1a3b184af686402fe4730cd725b8158a.jpg",
           "https://i.pinimg.com/236x/e2/35/cc/e235ccc82e9f53841e01d0317dbd3339.jpg",
-          "https://i.pinimg.com/236x/71/6f/18/716f187dfee8c48c8d5550f4d2281634.jpg",
           "https://i.pinimg.com/236x/8a/1f/f8/8a1ff8a116a414f89e5edb3b4487557c.jpg"
       ],
       "listedAt": "2024-03-16",
@@ -176,9 +169,7 @@ const accessories = [
       "description": "Pink Metallic Shimmer Cowl Neck Tie Strap Midi Dress How to Tie Hoodie Strings for beginners. Hoodie knots - single strand braid tutorial.",
       "price": 170,
       "imgsUrl": [
-          "https://i.pinimg.com/236x/5d/be/ba/5dbeba01d5d2cc16a851b31accd4d480.jpg",
           "https://i.pinimg.com/236x/b3/ca/d1/b3cad1db9d01a365f501ff948f7bf901.jpg",
-          "https://i.pinimg.com/236x/3c/6f/6e/3c6f6efa25a73f99ed3f8ba957015dd6.jpg",
           "https://i.pinimg.com/236x/10/8f/bc/108fbcbc06e751724862fe234f5e5c00.jpg"
       ],
       "listedAt": "2024-04-10",
@@ -271,10 +262,8 @@ const accessories = [
       "description": "Hair Claw Clips Are Back! Here Are Our Favorites Log in to see more Fashion Photography Inspiration",
       "price": 168,
       "imgsUrl": [
-          "https://i.pinimg.com/236x/76/9f/a4/769fa4f502cf38076ed671ad038c9ebe.jpg",
           "https://i.pinimg.com/236x/4c/bd/7f/4cbd7fe9112f7b09a5df66f155c65b41.jpg",
           "https://i.pinimg.com/236x/ca/72/40/ca72400a8dc855d643f849cd7ca5ee92.jpg",
-          "https://i.pinimg.com/236x/60/8b/85/608b85e512676c3d61ccc95db63e6919.jpg"
       ],
       "listedAt": "2024-04-10",
       "category": "Accessories",

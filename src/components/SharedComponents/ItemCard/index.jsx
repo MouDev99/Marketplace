@@ -47,7 +47,7 @@ function ItemCard({ props }) {
                   </h2>
                   <span className={(viewIsList ? "right-0 " : "right-2.5 ") + "absolute bottom-0 text-large"}>
                     <Link
-                      href={`/items/${id}`}
+                      href={`/${category}/item/${id}`}
                       color="foreground"
                       className="scale-105"
                       isExternal

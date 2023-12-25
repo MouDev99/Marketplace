@@ -160,9 +160,7 @@ const clothing = [
     price: 140,
     imgsUrl: [
       'https://i.pinimg.com/236x/46/52/bc/4652bc8ace5d63ddeacfd6bf3d96bee9.jpg',
-      'https://i.pinimg.com/236x/0d/81/7c/0d817c9c72ca0bfba332a7a3708cbf6b.jpg',
       'https://i.pinimg.com/236x/0d/8e/c6/0d8ec62f7e35a1a6aa20a6e0e3c78d3c.jpg',
-      'https://i.pinimg.com/236x/46/52/bc/4652bc8ace5d63ddeacfd6bf3d96bee9.jpg',
     ],
     listedAt: '2024-06-06',
     category: 'Clothing',
@@ -193,8 +191,6 @@ const clothing = [
       ' JOCKMAIL 3PCS/Packs Men Underwear Briefs Cotton Mens Briefs Low Waist Mens Boxer Briefs Calvin Klein 3-pack Stretch Briefs In White | ModeSens Nike Sport Essentials Woven Lined Flow Shorts',
     price: 105,
     imgsUrl: [
-      'https://i.pinimg.com/236x/2a/d2/d5/2ad2d5971f514c2df0dd08154fb321fd.jpg',
-      'https://i.pinimg.com/236x/92/4d/39/924d39229bcb5b225b1273ca197c92e9.jpg',
       'https://i.pinimg.com/236x/2a/d2/d5/2ad2d5971f514c2df0dd08154fb321fd.jpg',
       'https://i.pinimg.com/236x/4f/e4/b9/4fe4b9e40f306fac0fb8b5863cc7cf48.jpg',
     ],
