@@ -20,7 +20,7 @@ function ItemDetails({ item }) {
         </CardHeader>
         <CardBody>
           <div className="flex items-center gap-2">
-          <Avatar name="Joe" />
+          <Avatar name={seller.name} />
             <div>
               <h3 className="font-bold">{seller.name}</h3>
               <p>Phone: {seller.phone}</p>
