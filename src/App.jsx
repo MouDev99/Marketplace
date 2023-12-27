@@ -1,7 +1,8 @@
 import {useNavigate} from 'react-router-dom';
-import {NextUIProvider, Progress} from '@nextui-org/react';
+import {NextUIProvider} from '@nextui-org/react';
 import Header from './components/Header';
 import MainContent from './components/MainContent/main';
+import FilterContextProvider from './context/filter-context';
 import './App.css';
 
 function App() {
@@ -9,10 +10,12 @@ function App() {
 
   return (
     <NextUIProvider navigate={navigate}>
-      <div className="text-foreground bg-background min-h-screen">
-        <Header />
-        <MainContent />
-      </div>
+       <FilterContextProvider>
+          <div className="text-foreground bg-background min-h-screen">
+            <Header />
+            <MainContent />
+          </div>
+       </FilterContextProvider>
     </NextUIProvider>
   )
 };

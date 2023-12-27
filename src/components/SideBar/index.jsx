@@ -7,7 +7,7 @@ function SideBar() {
   return (
     <div className="
         min-w-[350px] h-[600px]
-        p-[10px] mt-3
+        p-5 mt-3
         flex flex-col gap-4
         overflow-y-auto
         border-r-1

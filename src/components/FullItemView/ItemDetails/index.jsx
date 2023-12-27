@@ -1,7 +1,13 @@
 import { Avatar, Button , Card, CardBody, CardHeader} from "@nextui-org/react";
 
 function ItemDetails({ item }) {
-  const { name, price, description, seller } = item;
+  const {
+    name, price,
+    description, shipping,
+    seller, listedAt
+  } = item;
+  const dateListed = new Date(listedAt).toDateString();
+  const timeListed = new Date(listedAt).toTimeString();
 
   return (
     <div className=" flex flex-col gap-4 pb-2 pl-2 pr-4 min-w-[400px] w-fit">
@@ -12,6 +18,10 @@ function ItemDetails({ item }) {
         </div>
         <div>
           <h3 className="font-bold text-xl">Price: ${price}</h3>
+        </div>
+        <div>
+          <h4 className="font-semibold text-foreground/80">Shipping: {shipping}</h4>
+          <span className="text-xs text-foreground/80">Listed At: {dateListed} | {timeListed}</span>
         </div>
       </div>
       <Card className="">

@@ -1,18 +1,25 @@
 import { useState } from "react";
 import { Radio, RadioGroup} from '@nextui-org/react'
 import { IconDown, IconUp } from "../../SharedComponents/IconUp-IconDown";
+import { useFilterContext } from "../../../context/filter-context";
 
 function DeliveryOptions() {
+    const { shippingOption, setShippingOption } = useFilterContext();
     const [showOptions, setShowOptions] = useState(true);
 
     const toggleOptions = () => setShowOptions(!showOptions);
 
     const OptionsUI = (
         <div className="flex flex-col ml-4">
-            <RadioGroup className="mt-1">
-                <Radio value="choice">Choice</Radio>
-                <Radio value="plus">Plus</Radio>
-                <Radio value="free shipping">Free shipping</Radio>
+            <RadioGroup
+              className="mt-1"
+              value={shippingOption}
+              onChange={(e) => setShippingOption(e.target.value)}
+            >
+              <Radio value="all">All Shipping</Radio>
+              <Radio value="choice">Choice</Radio>
+              <Radio value="plus">Plus</Radio>
+              <Radio value="free">Free shipping</Radio>
             </RadioGroup>
         </div>
     )

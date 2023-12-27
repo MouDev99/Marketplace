@@ -3,10 +3,20 @@ import { useParams } from "react-router-dom";
 import ProductsList from "./ProductsList";
 import ViewOptionsBar from './ViewOptionsBar';
 import data from "../../mock-data/data";
+import { useFilterContext } from "../../context/filter-context";
 
 function OfferedGoodsView() {
   const { categoryName } = useParams();
-  const items = data[categoryName || "All Categories"];
+  const {
+    searchQuery,
+    shippingOption,
+    priceRange
+  } = useFilterContext();
+
+  const items = filterItems(
+    categoryName, searchQuery,
+    shippingOption, priceRange
+  );
 
   const [view, setView] = useState("grid");
   const [sortOption, setSortOption] = useState("");
@@ -20,3 +30,13 @@ function OfferedGoodsView() {
 };
 
 export default OfferedGoodsView;
+
+function filterItems(category, searchQuery, shipping, priceRange) {
+  const itemsByCategory = data[category || "All Categories"];
+  return itemsByCategory.filter(item => {
+    return ( item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      item.description.toLowerCase().includes(searchQuery.toLowerCase()) )
+      && (shipping !== "all" ? item.shipping === shipping : true )
+      && item.price >= priceRange.min && item.price <= priceRange.max;
+  })
+};
