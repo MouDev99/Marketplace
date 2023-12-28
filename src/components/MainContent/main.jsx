@@ -2,6 +2,7 @@ import { Route, Routes} from "react-router-dom";
 import SideBar from "../SideBar";
 import OfferedGoodsView from "../OfferedGoodsView";
 import FullItemView from "../FullItemView";
+import CreateListingForm from "../CreateListingForm";
 
 function MainContent() {
   return (
@@ -11,8 +12,8 @@ function MainContent() {
           path="/"
           element={
             <>
-            <SideBar />
-            <OfferedGoodsView />
+              <SideBar />
+              <OfferedGoodsView />
             </>
           }
         />
@@ -20,12 +21,13 @@ function MainContent() {
           path="/category/:categoryName"
           element={
             <>
-            <SideBar />
-            <OfferedGoodsView />
+              <SideBar />
+              <OfferedGoodsView />
             </>
           }
         />
         <Route path="/:categoryName/item/:itemId" element={<FullItemView />} />
+        <Route path="/create/item" element={<CreateListingForm />} />
       </Routes>
     </div>
   );

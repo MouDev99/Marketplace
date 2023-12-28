@@ -9,7 +9,7 @@ function ProductsList({ props }) {
   // select the items to show based on pageNumber / (show 15 items per page)
   const currItems = items.slice((pageNumber -1)*15, pageNumber*15);
 
-  // sort current items base on sort otion
+  // sort current items based on sort option
   currItems.sort(compareFunc(sortOption));
 
   const layout = view === "grid" ?
