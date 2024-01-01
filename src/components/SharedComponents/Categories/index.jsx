@@ -8,14 +8,16 @@ function Categories() {
     const { categoryName } = useParams();
 
     useEffect(() => {
+      if (!categoryName) return;
+
       const prvActiveLink = document.querySelector(".category-link.active");
       if (prvActiveLink) {
         prvActiveLink.classList.remove("active");
       }
       const links = document.querySelectorAll(".category-link");
       links.forEach(link => {
-        if (link.innerText.toLowerCase() === categoryName) {
-          link.classList.add("active")
+        if (link.innerText.toLowerCase() === categoryName.toLowerCase()) {
+          link.classList.add("active");
         }
       })
     }, [categoryName]);
@@ -59,7 +61,7 @@ function Categories() {
     )
 
     return (
-      <div className="pb-1.5 ml-5 border-b-1 border-gray-300 min-w-[350px]">
+      <div className="pb-1.5 border-b-1 border-gray-300 min-w-[350px]">
         <span className="flex cursor-pointer relative font-bold"
           onClick={toggleCategoriesList}
         >

@@ -25,7 +25,7 @@ function DeliveryOptions() {
     )
 
     return (
-        <div className="pb-1.5 ml-5 border-b-1 border-gray-300">
+        <div className="pb-1.5 border-b-1 border-gray-300">
             <span className="flex cursor-pointer relative font-bold"
               onClick={toggleOptions}
             >

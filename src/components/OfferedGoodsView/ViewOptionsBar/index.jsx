@@ -3,7 +3,7 @@ import { Button, ButtonGroup, Select, SelectItem } from "@nextui-org/react";
 function ViewOptionsBar({ props }) {
   const { view, setView, setSortOption } = props;
   return (
-    <div className="border-1 border-neutral-400 rounded-xl my-3 mx-4 p-8">
+    <div className="border-1 border-neutral-400 rounded-xl my-3 p-8">
       <div className="flex justify-end items-center gap-3">
           <div className="flex items-center gap-1">
               <span>Sort by:</span>

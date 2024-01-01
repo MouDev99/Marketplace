@@ -10,6 +10,7 @@ function ItemCard({ props }) {
       name,
       description,
       category,
+      shipping,
       listedAt
     } = props.item;
     const dateListed = new Date(listedAt).toDateString();

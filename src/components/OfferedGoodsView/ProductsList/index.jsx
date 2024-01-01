@@ -17,7 +17,7 @@ function ProductsList({ props }) {
     "flex flex-col gap-2";
 
   return (
-    <div className={`${layout} min-w-[765px] border-1 border-neutral-400 rounded-xl mx-4 p-4 pb-20 h-fit`}>
+    <div className={`${layout} min-w-[765px] border-1 border-neutral-400 rounded-xl p-4 pb-20 h-fit`}>
       {
         currItems.map((item) => {
           return (
