@@ -1,19 +1,21 @@
 import { Button } from "@nextui-org/react";
 
-function CartSummary() {
+function CartSummary({ selectedItems }) {
+  const totalPrice = selectedItems
+    .reduce((acc, curr) => acc + curr.price, 0);
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-3">
       <div className="w-96 h-fit border-1 py-4 px-6 rounded-sm">
         <h2 className="text-2xl font-bold mb-4">Summary</h2>
         <div className="w-full flex items-center mb-4">
           <span className="text-sm font-bold">Total:</span>
-          <span className="text-xl font-bold ml-auto">US $0.00</span>
+          <span className="text-xl font-bold ml-auto">US ${totalPrice}</span>
         </div>
         <Button size="lg" variant="shadow" color="primary"
           className="w-full text-lg font-bold mb-4"
         >
-          Checkout (0)
+          Checkout ({totalPrice})
         </Button>
       </div>
       <div className="w-96 h-fit border-1 py-4 px-6 rounded-sm">

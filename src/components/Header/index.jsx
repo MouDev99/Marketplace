@@ -1,9 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "@nextui-org/react";
 import ThemeToggle from "./ThemeToggle";
+import { useCart } from "../../context/cart-context";
 
 function Header() {
   const navigate = useNavigate();
+  const { cart } = useCart();
+  const numOfItemsInCart = Object.keys(cart).length;
 
   return (
     <header className="flex justify-center bg-white dark:bg-gray-800 min-w-[500px] border-b-small border-[#71717A]">
@@ -24,7 +27,7 @@ function Header() {
       <div className="flex items-center">
         <Button variant="bordered" onPress={() => navigate("/shoppingcart")}>
           <IconShoppingCart />
-          <span className="text-xl font-semibold -ml-1">(4)</span>
+          <span className="text-xl font-semibold -ml-1">({numOfItemsInCart})</span>
         </Button>
       </div>
     </header>

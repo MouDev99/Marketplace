@@ -1,22 +1,47 @@
-import {
-  Button,
-  Card,
-  CardHeader,
-  CardBody,
-  Checkbox,
-  Image
-} from "@nextui-org/react";
+import { useState } from "react";
+import { Checkbox } from "@nextui-org/react";
+import CartItem from "./CartItem";
 
-function CartItems() {
-  const items = Array.from({length: 4});
+function CartItems({ props }) {
+  const {
+    cart, setCart,
+    selectedItems,
+    setSelectedItems
+  } = props;
+  const items = Object.values(cart);
+  const numOfCartItems = items.length;
+  const [allItemsSelected, setAllitemsSelected] = useState(false);
+
+  if (!items.length) {
+    return (
+      <div className="max-w-2xl flex flex-grow">
+        <h2 className="text-2xl font-bold">
+         You have 0 items in your cart. Start adding items to see them here.
+        </h2>
+      </div>
+    )
+  }
 
   return (
-    <div className="w-fit flex flex-col gap-3">
+    <div className="max-w-2xl flex flex-grow flex-col gap-3">
       <div className="flex flex-col gap-4 p-3 shadow-lg rounded-sm border-1">
-        <h2 className="text-2xl font-bold">Shopping Cart (4)</h2>
+        <h2 className="text-2xl font-bold">Shopping Cart ({numOfCartItems})</h2>
         <Checkbox
           color="secondary"
           className="text-sm text-foreground ml-2"
+          isSelected={allItemsSelected}
+          onChange={(e) => {
+            const isSelected = e.target.checked;
+            if (isSelected) {
+              setSelectedItems([
+                ...items.map(itm => {
+                  return { id: itm.id, price: itm.price}
+                })
+              ]);
+            }
+            else setSelectedItems([]);
+            setAllitemsSelected(e.target.checked)
+          }}
         >
           Select all items
         </Checkbox>
@@ -24,7 +49,17 @@ function CartItems() {
       <div className="flex flex-col gap-2 rounded-sm border-1">
         {
           items.map((item, i) => {
-            return <CartItem key={i}/>
+            return (
+              <CartItem
+                key={i}
+                props={{
+                  item, numOfCartItems,
+                  selectedItems, setSelectedItems,
+                  setAllitemsSelected,
+                  cart, setCart
+                }}
+              />
+            )
           })
         }
       </div>
@@ -33,71 +68,3 @@ function CartItems() {
 };
 
 export default CartItems;
-
-function CartItem() {
-  return (
-    <Card radius="md" shadow="sm">
-      <CardHeader>
-        <Checkbox
-          color="secondary"
-          className="text-sm text-foreground ml-2"
-        >
-          Item title
-        </Checkbox>
-      </CardHeader>
-
-      <CardBody className="overflow-visible ml-4">
-        <div className="flex items-center max-lg:flex-col max-lg:items-start max-lg:gap-2">
-          <Checkbox color="secondary" className="text-sm text-foreground max-lg:hidden"></Checkbox>
-          <Image
-            alt="Card background"
-            className="object-cover rounded-md min-w-[170px]"
-            src="https://nextui.org/images/hero-card-complete.jpeg"
-            width={170}
-          />
-
-          <div className="mx-2 max-lg:ml-0">
-            <div className="flex">
-              <p className="max-w-xl text-md">
-                This is the product description
-                This is the product description
-                This is the product description
-                This is the product description
-                This is the product description
-                This is the product description
-              </p>
-              <Button
-                isIconOnly
-                className="data-[hover]:bg-foreground/10"
-                radius="sm"
-                variant="bordered"
-                title="remove from cart"
-              >
-                <IconDelete />
-              </Button>
-            </div>
-            <div className="flex flex-col gap-1">
-              <span className="text-base font-bold">Price: US $5.34</span>
-              <span className="text-xs font-semibold">Shipping: free shipping</span>
-            </div>
-          </div>
-        </div>
-      </CardBody>
-    </Card>
-  );
-}
-
-function IconDelete(props) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      height="2em"
-      width="2em"
-      {...props}
-      className="text-danger"
-    >
-      <path d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 002 2h8a2 2 0 002-2V7H6v12z" />
-    </svg>
-  );
-}

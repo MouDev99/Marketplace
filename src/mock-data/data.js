@@ -9,7 +9,7 @@ import shoes from './shoes.js';
 import sportsEntertainment from './sportsEntertainment.js';
 import toysGames from './toysGames.js';
 
-const allCategories = [
+export const allCategories = [
   ...accessories,
   ...clothing,
   ...electronics,

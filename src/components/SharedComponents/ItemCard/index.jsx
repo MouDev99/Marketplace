@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {Card, CardBody, Image, Button, Link} from "@nextui-org/react";
+import { useCart } from "../../../context/cart-context";
 
 function ItemCard({ props }) {
     const { view } = props;
@@ -10,12 +11,33 @@ function ItemCard({ props }) {
       name,
       description,
       category,
-      shipping,
       listedAt
     } = props.item;
     const dateListed = new Date(listedAt).toDateString();
     const viewIsList = view === "list";
+    const {cart, setCart} = useCart();
     const [liked, setLiked] = useState(false);
+
+    const handleLikePress = () => {
+      let cartItemIds = JSON.parse(localStorage.getItem("cartItemIds")) || [];
+
+      if (liked) {
+        delete cart[id];
+        cartItemIds = cartItemIds.filter(cartItemId => cartItemId !== id);
+      } else {
+        cart[id] = props.item;
+        cartItemIds.push(id);
+      }
+
+      localStorage.setItem("cartItemIds", JSON.stringify(cartItemIds));
+      setCart({...cart});
+      setLiked((prev) => !prev);
+    };
+
+    useEffect(() => {
+      const isItemInCart = cart[id] !== undefined;
+      if (isItemInCart) setLiked(true);
+    }, []);
 
     return (
       <Card
@@ -62,7 +84,7 @@ function ItemCard({ props }) {
                   className="text-default-900/60 data-[hover]:bg-foreground/10 -translate-y-2 translate-x-2 mt-3"
                   radius="full"
                   variant="light"
-                  onPress={() => setLiked((v) => !v)}
+                  onPress={handleLikePress}
                 >
                   <HeartIcon
                     className={liked ? "[&>path]:stroke-transparent" : ""}
